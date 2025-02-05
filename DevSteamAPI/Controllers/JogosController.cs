@@ -24,6 +24,7 @@ namespace DevSteamAPI.Controllers
         }
 
         // GET: api/Jogos
+        [AllowAnonymous]
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Jogo>>> GetJogos()
         {
